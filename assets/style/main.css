@@ -1,0 +1,274 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  vertical-align: top;
+}
+img {
+  vertical-align: top;
+}
+html,
+body {
+  font-family: Oswald, sans-serif;
+  height: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  background-color: #ffffff;
+}
+
+/*  */
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+._container {
+  max-width: 1000px;
+  padding: 0px 15px;
+  margin: 0px auto;
+  box-sizing: content-box;
+}
+._ibg {
+  position: relative;
+}
+._ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+/* Page techncal class */
+
+.page {
+  flex: 1 1 auto;
+  z-index: 1000;
+}
+
+/* Header */
+
+.login__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  filter: brightness(60%);
+}
+.login__bg img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  filter: blur(1px);
+}
+.header {
+  position: relative;
+  padding: 3px 45px;
+  color: #fff;
+}
+.header__fixed {
+  z-index: 1000;
+  width: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.836);
+}
+.header a:hover {
+  color: #3d98ec;
+  transition: color 0.1s linear;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  font-style: italic;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: inherit;
+}
+.header__menu {
+  padding: 20px 0;
+}
+.menu__list {
+  display: flex;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.menu__item {
+  margin: 0 -50px 0 0;
+}
+.menu__item:not(:last-child) {
+  margin: 0px 25px 0px 0px;
+}
+.menu__link {
+  color: inherit;
+}
+.header__items {
+  padding: 15px 0;
+}
+.header__link {
+}
+.header__link:last-child img {
+  margin: -3px 0 0 0;
+}
+.header__link:not(:last-child) {
+  margin: 0px 20px 0px 0px;
+}
+
+/* Page cart*/
+
+.page__login {
+  margin: 100px 0 0 0;
+}
+.login__page {
+}
+.login-page__container {
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  background: #ffffffea;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 5px #318aff;
+}
+.form__item {
+  margin: 0 0 20px 0;
+  height: 40px;
+  width: 300px;
+  border: 1px solid #424242;
+  resize: none;
+}
+.form__item::-webkit-input-placeholder {
+  padding: 10px;
+}
+.form__item-button {
+  color: #292727;
+  font-size: 12px;
+  font-weight: 600;
+  height: 40px;
+  width: 300px;
+  background-color: #ffffff;
+  border: 1px solid #292727;
+  display: inline-block;
+  letter-spacing: 0.5px;
+  transition: background-color 0.4s linear;
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+.a {
+  padding: 11px 0 0 0;
+}
+.form__item-button:hover {
+  color: #ffffff;
+  background-color: #363333;
+  border: 1px solid #ffffff;
+  display: inline-block;
+}
+.registration__button {
+  color: #292727;
+  font-size: 12px;
+  font-weight: 600;
+  /* height: 40px; 
+  width: 300px;
+  background-color: #ffffffd7; 
+  border: 1px solid #292727; */
+  display: inline-block;
+  letter-spacing: 0.5px;
+  transition: background-color 0.4s linear;
+  text-align: right;
+  margin: 5px 0 0 0; 
+}
+.registration__button:hover {
+  color: #9c9c9c;
+  /* background-color: #363333;  */
+  /* border: 1px solid #ffffff; */
+  display: inline-block;
+}
+.contact__main {
+  padding: 0 0 0 40px;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #101010;
+  color: #fff;
+}
+.footer__container {
+  height: 240px;
+}
+.footer__body {
+  padding: 40px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__column {
+}
+.footer__column__center {
+  margin: 0 300px 0 240px;
+}
+.footer__menu {
+}
+.menu-footer {
+}
+.menu-footer__list {
+}
+.menu-footer__item {
+  margin: 10px 0 0 0;
+}
+.menu-footer__link {
+  color: inherit;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  font-weight: 600;
+}
+.footer a:hover {
+  color: #deb887;
+  transition: color 0.1s linear;
+}
+.footer__logo {
+}
+.header__logo {
+}
+.footer__bottom {
+}
+.footer-social__links {
+  display: flex;
+}
+.footer-social__link {
+  padding: 0 5px;
+}
+.footer-social__link:hover {
+}
+.footer__copyright {
+  margin: -35px 0 0 0;
+  align-items: center;
+  justify-content: left;
+  padding: 0 0 15px 15px;
+}
+.footer-copyright__link {
+  color: inherit;
+  padding: 0 0 0 5px;
+}
